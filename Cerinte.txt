@@ -1,0 +1,34 @@
+Chairs Calculator:
+
+Se considera ca esti gazda unei petreceri si ai N invitati. Stii ca invitatul cu numarul i ajunge la petrecere la timpul Si si pleaca la timpul Fi. Intre timpul Si si Fi, invitatul i are nevoie de un scaun pe care sa se aseze. 
+Fiind data o lista de N invitati, sa se implementeza un algoritm care calculeaza numarul minim de scaune necesare astfel incat toti invitatii sa aiba un scaun cand vor ajunge la petrecere.
+
+Exemplu : pentru urmatorii 5 invitati
+Invitatul 1 ajunge la 13 si pleaca la 17
+Invitatul 2 ajunge la 14 si pleaca la 17
+Invitatul 3 ajunge la 18 si pleaca la 19
+Invitatul 4 ajunge la 17 si pleaca la 18
+Invitatul 5 ajunge la 15 si pleaca la 20
+
+Algoritmul va afisa 3
+
+
+Jumping array:
+Se considera un vector v de N numere reale si urmatoarele strategii:
+
+Se poate sari de la un index J al vectorului la un index K dupa cum urmeaza:
+Daca este o saritura impara (saritura 1, 3, 5...), saritura se va face la indexul K cu proprietatea ca v[K] > v[J] si diferenta v[K] - v[J] este minimul diferentelor dintre v[K], cu v[K] > v[J] si v[J]
+Daca este o saritura para (saritura 2, 4, 6...), saritura se va face la indexul K cu proprietatea ca v[K] < v[J] si diferenta v[J] - v[K] este minimul diferentelor dintre v[J], si v[K] cu v[K] < v[J]
+
+
+Fiind dat un vector v, afisati in cate moduri se poate ajunge prin sarituri de la un index J (J de la 0 la N-1) pana la sfarsitul vectorului.
+
+Exemplu:
+Pentru vectorul [10, 13, 12, 14, 15]:
+
+La saritura 1 (impara) indexul J = 0 va sari la indexul K = 2, pentru ca 12 > 10 si 12 - 10 = 2, care este diferenta minima
+Urmatoarea saritura nu are rezultat, deoarece este para si nu exista numere mai mici decat 12, cu index mai mare decat 2.
+
+Solutii: saritura care incepe de la J = 3 si sare la K=4 (sfarsitul vectorului) si saritura care incepe de la J=4 (care deja este sfarsitul vectorului)
+
+Raspuns: 2 moduri
